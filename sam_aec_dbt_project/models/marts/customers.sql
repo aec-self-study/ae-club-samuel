@@ -1,10 +1,10 @@
 with customers as (
 
   select 
-    id as customer_id, 
-    name, 
-    email 
-  from `analytics-engineers-club.coffee_shop.customers`
+    customer_id, 
+    customer_name, 
+    customer_email 
+  from {{ ref('stg_customers') }}
 
 ), orders as (
   
@@ -12,15 +12,15 @@ with customers as (
     customer_id, 
     min(created_at) as first_order_at, 
     count(*) as orders 
-  from `analytics-engineers-club.coffee_shop.orders` 
+  from {{ ref('stg_orders') }}
   group by 1
   
 )
 
 select
   customers.customer_id,
-  customers.name,
-  customers.email,
+  customers.customer_name,
+  customers.customer_email,
   orders.first_order_at,
   orders.orders
 from customers
