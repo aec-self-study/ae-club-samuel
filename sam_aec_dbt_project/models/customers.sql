@@ -11,7 +11,7 @@ with customers as (
   select 
     customer_id, 
     min(created_at) as first_order_date, 
-    count(*) as count_orders 
+    count(*) as orders 
   from `analytics-engineers-club.coffee_shop.orders` 
   group by 1
   
@@ -21,7 +21,7 @@ select
   customers.customer_id,
   customers.customer_name,
   customers.customer_email,
-  orders.first_order_date,
+  orders.first_order_at,
   orders.count_orders
 from customers
 left join orders
