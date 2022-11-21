@@ -26,4 +26,4 @@ select
 from customers
 left join orders
   on customers.customer_id = orders.customer_id
-order by first_order_date
+order by first_order_at
