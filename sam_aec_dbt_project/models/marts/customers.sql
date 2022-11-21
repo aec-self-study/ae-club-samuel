@@ -19,8 +19,8 @@ with customers as (
 
 select
   customers.customer_id,
-  customers.name,
-  customers.email,
+  customers.customer_name,
+  customers.customer_email,
   orders.first_order_at,
   orders.orders
 from customers
