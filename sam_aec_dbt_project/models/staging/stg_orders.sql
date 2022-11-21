@@ -8,7 +8,7 @@ with orders as (
         address as shipping_address,
         state as shipping_state,
         zip as shipping_zip
-    from analytics-engineers-club.coffee_ship.orders
+    from `analytics-engineers-club.coffee_shop.orders`
 
 )
 
