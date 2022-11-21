@@ -109,3 +109,158 @@
 [0m03:07:07.294508 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
 [0m03:07:07.302828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f186f1ae5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f186f1aebb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f186f1aec40>]}
 [0m03:07:07.303231 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-11-21 03:07:35.469331 | 6f277d15-5581-4512-9273-014607c11e87 ==============================
+[0m03:07:35.469363 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:07:35.470955 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspaces/ae-club-samuel', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m03:07:35.471340 [debug] [MainThread]: Tracking: tracking
+[0m03:07:35.485341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3cd4880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3cd4970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3cd4910>]}
+[0m03:07:35.560957 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:07:35.561317 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:07:35.567833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6f277d15-5581-4512-9273-014607c11e87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3bbd0d0>]}
+[0m03:07:35.575462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6f277d15-5581-4512-9273-014607c11e87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3c6dbb0>]}
+[0m03:07:35.575996 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m03:07:35.576889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6f277d15-5581-4512-9273-014607c11e87', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3c6dbe0>]}
+[0m03:07:35.578463 [info ] [MainThread]: 
+[0m03:07:35.579130 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m03:07:35.586774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3cc5d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3c6d5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19b3c6d160>]}
+[0m03:07:35.587206 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-11-21 03:10:41.465147 | beb47acd-9901-4523-9b24-0a0d3f4ac111 ==============================
+[0m03:10:41.465180 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:10:41.466893 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspaces/ae-club-samuel', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['+customers'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m03:10:41.467692 [debug] [MainThread]: Tracking: tracking
+[0m03:10:41.481151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b40975e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b40976d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b4097670>]}
+[0m03:10:41.558843 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:10:41.559221 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:10:41.565679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'beb47acd-9901-4523-9b24-0a0d3f4ac111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b3f7c0d0>]}
+[0m03:10:41.572607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'beb47acd-9901-4523-9b24-0a0d3f4ac111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b402e910>]}
+[0m03:10:41.573152 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m03:10:41.573742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'beb47acd-9901-4523-9b24-0a0d3f4ac111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b4086cd0>]}
+[0m03:10:41.575759 [warn ] [MainThread]: The selection criterion '+customers' does not match any nodes
+[0m03:10:41.578986 [info ] [MainThread]: 
+[0m03:10:41.579648 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m03:10:41.594110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b402e370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b402e0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63b402e730>]}
+[0m03:10:41.594452 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-11-21 03:11:06.217748 | 5beae39c-5bbe-4a29-95e9-b66fe7dc3095 ==============================
+[0m03:11:06.217786 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:11:06.220097 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspaces/ae-club-samuel', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m03:11:06.220571 [debug] [MainThread]: Tracking: tracking
+[0m03:11:06.232422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea56313790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea56313880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea56313820>]}
+[0m03:11:06.310943 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:11:06.311304 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:11:06.317742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5beae39c-5bbe-4a29-95e9-b66fe7dc3095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea561fd0d0>]}
+[0m03:11:06.326214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5beae39c-5bbe-4a29-95e9-b66fe7dc3095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea562adac0>]}
+[0m03:11:06.326758 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m03:11:06.327224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5beae39c-5bbe-4a29-95e9-b66fe7dc3095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea562adaf0>]}
+[0m03:11:06.328604 [info ] [MainThread]: 
+[0m03:11:06.329158 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m03:11:06.337953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea56305df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea56305fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea56305f70>]}
+[0m03:11:06.338434 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-11-21 03:15:45.090834 | e97d3a6f-b2f5-462a-817c-013489cec478 ==============================
+[0m03:15:45.090846 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:15:45.091420 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspaces/ae-club-samuel', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m03:15:45.091745 [debug] [MainThread]: Tracking: tracking
+[0m03:15:45.099675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a1fcf1220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a1fcf14f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a1fcf12b0>]}
+[0m03:15:45.100514 [info ] [MainThread]: Setting up your profile.
+[0m03:15:54.817250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a1fd2be50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a1fd2be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6a1fcdcd30>]}
+[0m03:15:54.817943 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-11-21 03:16:12.484872 | 7c9693c9-fc1e-4fa9-a132-c2e836ed6669 ==============================
+[0m03:16:12.484886 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:16:12.485469 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspaces/ae-club-samuel', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'demo_dbt_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m03:16:12.485805 [debug] [MainThread]: Tracking: tracking
+[0m03:16:12.494696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7600ac550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7600ac970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7600ac730>]}
+[0m03:16:12.495583 [info ] [MainThread]: Setting up your profile.
+[0m03:17:52.464232 [info ] [MainThread]: Profile default written to /workspaces/ae-club-samuel/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m03:17:52.464923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7600ebfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa76364ebe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa760081340>]}
+[0m03:17:52.465935 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-11-21 03:18:04.055869 | 4aa9e0c6-7753-4c96-809f-acd82a4e6805 ==============================
+[0m03:18:04.055882 [info ] [MainThread]: Running with dbt=1.3.1
+[0m03:18:04.056492 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspaces/ae-club-samuel', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m03:18:04.056816 [debug] [MainThread]: Tracking: tracking
+[0m03:18:04.064715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd29afec550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd29afec970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd29afec730>]}
+[0m03:18:04.450976 [debug] [MainThread]: Executing "git --help"
+[0m03:18:04.458105 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:18:04.458587 [debug] [MainThread]: STDERR: "b''"
+[0m03:18:04.463686 [debug] [MainThread]: Acquiring new bigquery connection "debug"
+[0m03:18:04.464821 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:18:13.487256 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: 'Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+  '
+[0m03:18:13.488198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd299052df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2990615b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd299061550>]}
+[0m03:18:13.488944 [debug] [MainThread]: Flushing usage events
+[0m03:18:13.577837 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-11-21 14:23:45.236837 | 6c8c505c-5eed-4882-a8da-29a37cf4e9a4 ==============================
+[0m14:23:45.236855 [info ] [MainThread]: Running with dbt=1.3.1
+[0m14:23:45.243637 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m14:23:45.244005 [debug] [MainThread]: Tracking: tracking
+[0m14:23:45.254190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f118011ebe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f118011ea00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f118011eac0>]}
+[0m14:23:45.255367 [info ] [MainThread]: Creating dbt configuration folder at /home/vscode/.dbt
+[0m14:23:59.965227 [debug] [MainThread]: Starter project path: /usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/include/starter_project
+[0m14:26:46.345875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f117e1d1bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f117e1d13a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f117e1d1e80>]}
+[0m14:26:46.346482 [debug] [MainThread]: Flushing usage events
+[0m14:26:46.471988 [error] [MainThread]: Encountered an error:
+
+[0m14:26:46.493621 [error] [MainThread]: Traceback (most recent call last):
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/main.py", line 135, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/main.py", line 198, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/main.py", line 245, in run_from_args
+    results = task.run()
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/task/init.py", line 332, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/task/init.py", line 207, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/task/init.py", line 191, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/task/init.py", line 141, in generate_target_from_input
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/usr/local/python/3.9.15/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2022-11-21 14:28:22.245368 | e6589419-edfb-4246-8772-b0d8836694ea ==============================
+[0m14:28:22.245382 [info ] [MainThread]: Running with dbt=1.3.1
+[0m14:28:22.245977 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'sam_aec_dbt_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m14:28:22.246321 [debug] [MainThread]: Tracking: tracking
+[0m14:28:22.255297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4bd7dcb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4bd7dcaf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4bd7dcac0>]}
+[0m14:28:22.256900 [debug] [MainThread]: Starter project path: /usr/local/python/3.9.15/lib/python3.9/site-packages/dbt/include/starter_project
+[0m14:29:03.397102 [info ] [MainThread]: Profile sam_aec_dbt_project written to /home/vscode/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:29:03.397767 [info ] [MainThread]: 
+Your new dbt project "sam_aec_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:29:03.398461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4bdb4f520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4bb891ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4bb891d60>]}
+[0m14:29:03.398951 [debug] [MainThread]: Flushing usage events
