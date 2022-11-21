@@ -2,15 +2,15 @@ with customers as (
 
   select 
     id as customer_id, 
-    name as customer_name, 
-    email as customer_email 
+    name, 
+    email 
   from `analytics-engineers-club.coffee_shop.customers`
 
 ), orders as (
   
   select 
     customer_id, 
-    min(created_at) as first_order_date, 
+    min(created_at) as first_order_at, 
     count(*) as orders 
   from `analytics-engineers-club.coffee_shop.orders` 
   group by 1
@@ -19,10 +19,10 @@ with customers as (
 
 select
   customers.customer_id,
-  customers.customer_name,
-  customers.customer_email,
+  customers.name,
+  customers.email,
   orders.first_order_at,
-  orders.count_orders
+  orders.orders
 from customers
 left join orders
   on customers.customer_id = orders.customer_id
