@@ -1,10 +1,10 @@
 with customers as (
 
   select 
-    id as customer_id, 
-    name, 
-    email 
-  from `analytics-engineers-club.coffee_shop.customers`
+    customer_id, 
+    customer_name, 
+    customer_email 
+  from {{ ref('stg_customers') }}
 
 ), orders as (
   
