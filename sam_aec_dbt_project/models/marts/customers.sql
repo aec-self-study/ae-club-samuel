@@ -12,7 +12,7 @@ with customers as (
     customer_id, 
     min(created_at) as first_order_at, 
     count(*) as orders 
-  from `analytics-engineers-club.coffee_shop.orders` 
+  from {{ ref('stg_orders') }}
   group by 1
   
 )
