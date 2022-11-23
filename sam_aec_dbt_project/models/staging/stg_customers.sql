@@ -4,7 +4,7 @@ with customers as (
         id as customer_id,
         name as customer_name,
         email as customer_email
-    from `analytics-engineers-club.coffee_shop.customers`
+    from {{ source('coffee_shop', 'customers') }}
 
 )
 
