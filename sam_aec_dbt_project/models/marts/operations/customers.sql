@@ -10,7 +10,7 @@ with customers as (
   
   select 
     customer_id, 
-    min(order_created_at) as first_order_at, 
+    min(created_at) as first_order_at, 
     count(*) as orders 
   from {{ ref('stg_coffee_shop__orders') }}
   group by 1
