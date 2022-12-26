@@ -1,0 +1,99 @@
+version: 2
+ 
+sources:
+  - name: coffee_shop
+    project: analytics-engineers-club
+    freshness:
+      warn_after:
+        count: 4
+        period: hour
+      error_after:
+        count: 8
+        period: hour
+    loaded_at_field: created_at
+
+    tables:
+      - name: customers
+        columns:
+          - name: id
+            description: "{{ doc('id') }}"
+            tests:
+              - unique
+              - not_null
+          - name: name
+            tests:
+              - not_null
+          - name: email
+            tests:
+              - not_null
+ 
+      - name: orders
+        columns:
+          - name: id
+            description: "{{ doc('id') }}"
+            tests:
+              - unique
+              - not_null
+          - name: created_at
+            description: "{{ doc('created_at') }}"
+            tests:
+              - not_null
+          - name: customer_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('coffee_shop', 'customers')
+                  field: id
+          - name: total
+
+      - name: products
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+          - name: name
+            tests:
+              - not_null
+              - unique
+          - name: category
+            tests:
+              - not_null
+          - name: created_at
+            tests:
+              - not_null
+      
+      - name: product_prices
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+          - name: product_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('coffee_shop', 'products')
+                  field: id
+
+      - name: order_items
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+          - name: order_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('coffee_shop', 'orders')
+                  field: id
+          - name: product_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('coffee_shop', 'products')
+                  field: id
+
+      - name: pageviews
+

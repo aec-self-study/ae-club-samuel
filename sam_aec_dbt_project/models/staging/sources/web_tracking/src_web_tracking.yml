@@ -1,0 +1,23 @@
+version: 2
+ 
+sources:
+  - name: web_tracking
+    project: analytics-engineers-club
+    freshness:
+      warn_after:
+        count: 4
+        period: hour
+      error_after:
+        count: 8
+        period: hour
+    loaded_at_field: timestamp
+
+    tables:
+      - name: pageviews
+        columns:
+          - name: id
+          - name: visitor_id
+          - name: device_type
+          - name: timestamp
+          - name: page
+          - name: customer_id

@@ -4,15 +4,15 @@ with customers as (
     customer_id, 
     customer_name, 
     customer_email 
-  from {{ ref('stg_customers') }}
+  from {{ ref('stg_coffee_shop__customers') }}
 
 ), orders as (
   
   select 
     customer_id, 
-    min(order_created_at) as first_order_at, 
+    min(created_at) as first_order_at, 
     count(*) as orders 
-  from {{ ref('stg_orders') }}
+  from {{ ref('stg_coffee_shop__orders') }}
   group by 1
   
 )

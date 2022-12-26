@@ -1,0 +1,20 @@
+version: 2
+
+models:
+
+  - name: fct_pageviews
+    description: "One record per pageview by a customer. The visitor ID is the
+    first recorded ID for each customer."
+    columns:
+      - name: visitor_id
+        tests:
+          - not_null
+          - is_one_to_one:
+              field: customer_id
+      - name: pageview_id
+        tests:
+          - not_null
+      - name: customer_id
+      - name: device_type
+      - name: pageview_timestamp
+      - name: page_name

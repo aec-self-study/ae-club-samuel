@@ -4,18 +4,18 @@ with customers as (
         customer_id,
         customer_name,
         customer_email
-    from {{ ref('stg_customers') }}
+    from {{ ref('stg_coffee_shop__customers') }}
 
 ), orders as (
     select
         order_id,
         customer_id,
-        order_created_at,
-        order_total_dollars,
+        created_at,
+        total,
         shipping_address,
         shipping_state,
         shipping_zip
-    from {{ ref('stg_orders') }}
+    from {{ ref('stg_coffee_shop__orders') }}
 
 ), joined as (
 
@@ -24,8 +24,8 @@ with customers as (
         orders.order_id,
         customers.customer_name,
         customers.customer_email,
-        orders.order_created_at,
-        orders.order_total_dollars,
+        orders.created_at,
+        orders.total,
         orders.shipping_address,
         orders.shipping_state,
         orders.shipping_zip
