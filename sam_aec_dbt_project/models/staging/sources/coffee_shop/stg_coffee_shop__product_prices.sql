@@ -2,9 +2,7 @@ with product_prices_source as (
 
     select * from {{ source('coffee_shop', 'product_prices') }}
 
-),
-
-renamed as (
+), renamed as (
 
     select
         id as product_prices_id,

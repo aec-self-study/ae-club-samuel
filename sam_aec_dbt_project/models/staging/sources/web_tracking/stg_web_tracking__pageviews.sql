@@ -2,9 +2,7 @@ with pageviews_source as (
 
     select * from {{ source('web_tracking', 'pageviews') }}
 
-),
-
-renamed as (
+), renamed as (
 
     select
         id as pageview_id,
@@ -13,7 +11,7 @@ renamed as (
         device_type,
         timestamp as pageview_timestamp,
         page as page_name
-    from source
+    from pageviews_source
 
 )
 
