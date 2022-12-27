@@ -18,3 +18,4 @@ models:
       - name: device_type
       - name: pageview_timestamp
       - name: page_name
+      - name: is_first_pageview
