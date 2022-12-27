@@ -19,3 +19,16 @@ models:
       - name: pageview_timestamp
       - name: page_name
       - name: is_first_pageview
+
+  - name: fct_sessions
+    description: "One record per session, per visitor."
+    columns:
+      - name: surrogate_key
+        tests:
+          - unique
+          - not_null
+      - name: visitor_id
+      - name: session_number
+      - name: session_started_at
+      - name: session_minutes
+      - name: session_ended_at
