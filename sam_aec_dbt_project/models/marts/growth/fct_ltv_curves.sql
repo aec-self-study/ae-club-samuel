@@ -43,16 +43,26 @@ with customers_source as (
             and customer_dates.customer_id = orders_source.customer_id
     group by 1, 2
 
+), by_week as (
+
+    select
+        date_trunc(date_day, week) as date_week,
+        customer_id,
+        ifnull(sum(revenue), 0) as sum_revenue
+    from joined
+    group by 1, 2
+
 ), window_sum as (
 
     select
-        date_day,
+        date_week,
         customer_id,
-        revenue,
-        sum(revenue) over (partition by customer_id order by date_day) as revenue_cumulative
-    from joined
+        sum_revenue,
+        sum(sum_revenue) over (partition by customer_id order by date_week) as revenue_cumulative
+    from by_week
     group by 1, 2, 3
 
 )
 
 select * from window_sum
+        
