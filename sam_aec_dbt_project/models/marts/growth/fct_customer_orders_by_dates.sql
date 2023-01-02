@@ -35,11 +35,17 @@ with customers_source as (
 
     select
         order_id,
-        product_id,
         customer_id,
         date(created_at) as created_date,
         total
     from {{ ref('stg_coffee_shop__orders') }}
+
+), order_items_source as (
+
+    select
+        order_id,
+        product_id
+    from {{ ref('stg_coffee_shop__order_items') }}
 
 ), joined as (
 
@@ -47,16 +53,18 @@ with customers_source as (
         customer_dates.date_day,
         customer_dates.customer_id,
         orders_source.order_id,
-        orders_source.product_id,
+        order_items_source.product_id,
         products_source.product_name,
-        products_source.product_category,
+        products_source.category,
         ifnull(sum(orders_source.total), 0) as revenue
     from customer_dates
     left join orders_source
         on customer_dates.date_day = orders_source.created_date
             and customer_dates.customer_id = orders_source.customer_id
+    left join order_items_source
+        on orders_source.order_id = order_items_source.order_id
     left join products_source
-        on orders_source.product_id = products_source.product_id
+        on order_items_source.product_id = products_source.product_id
     group by 1, 2, 3, 4, 5, 6
 
 ), by_week as (
