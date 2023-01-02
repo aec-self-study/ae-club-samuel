@@ -27,7 +27,6 @@ with customers_source as (
 
     select
         product_id,
-        order_id,
         product_name,
         category
     from {{ ref('stg_coffee_shop__products') }}
